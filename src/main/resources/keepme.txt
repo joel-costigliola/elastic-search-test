@@ -1,0 +1,11 @@
+just here to avoid the test to fail as BootstrapForTesting calls checkJarHell.checkJarHell which expects these directories to exist:
+- elastic-search-test/build/classes/test/
+- elastic-search-test/build/resources/test
+- elastic-search-test/build/classes/main
+- elastic-search-test/build/resources/main
+
+to get that in gradle, one need to put something in
+- src/main/java
+- src/main/resources
+- src/test/java
+- src/test/resources
